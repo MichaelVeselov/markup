@@ -1,0 +1,274 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #737373;
+}
+
+.wrap {
+    max-width: 1080px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 15px;
+    max-width: 1330px;
+    margin: 0 auto;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.menu li {
+    margin-left: 94px;
+}
+
+.menu li a {
+    color: #252b42;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.menu li a:hover {
+    color: #fa4a0c;
+}
+
+.download__wrap {
+    background: url('../img/bg-app.png') center center no-repeat;
+    background-size: cover;
+    padding: 75px 0 145px 0;
+}
+
+.download {
+    text-align: center;
+    color: #fff;
+}
+
+.download__txt {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 20px;
+}
+
+.download__title {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 5rem;
+    margin-bottom: 30px;
+}
+
+.download__subtitle {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 60px;
+}
+
+.btn {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 30px;
+    border: 1px solid #fff;
+    padding: 15px 60px;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.btn--red {
+    background-color: #fa4a0c;
+    border-color: #fa4a0c;
+}
+
+.workapp__wrap {
+    padding: 50px 0;
+}
+
+.parttitle {
+    font-size: 2.75rem;
+    font-weight: 600;
+    text-align: center;
+    color: #000;
+    margin-bottom: 80px;
+}
+
+.workapp--item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.workapp--item:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+.workapp--item:last-child {
+    margin-bottom: 0;
+}
+
+.workapp__img {
+    width: 47%;
+    text-align: center;
+}
+
+.workapp__txt {
+    width: 50%;
+}
+
+.workapp__txt h3 {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+    color: #fa4a0c;
+    margin-bottom: 20px;
+}
+
+.workapp__txt h2 {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    font-weight: 700;
+    color: #252b42;
+    margin-bottom: 30px;
+}
+
+.workapp__txt p {
+    font-size: 1.5rem;
+    line-height: 2.375rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.footer__wrap {
+    padding: 70px 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer p {
+    font-size: 0.75rem;
+    line-height: 1.1rem;
+    font-weight: 500;
+    color: #5c5c5c;
+}
+
+@media (max-width: 800px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-bottom: 30px;
+    }
+
+    .menu li {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .download__wrap {
+        padding: 40px 0 70px 0;
+    }
+
+    .download__txt {
+        font-weight: 500;
+        font-size: 1.25rem;
+    }
+
+    .download__title {
+        font-size: 2rem;
+        line-height: 3.5rem;
+    }
+
+    .download__subtitle {
+        font-size: 1.25rem;
+    }
+    .parttitle {
+        font-size: 2rem;
+        margin-bottom: 50px;
+    }
+
+    .workapp--item {
+        flex-direction: column-reverse;
+    }
+
+    .workapp--item:nth-child(2n) {
+        flex-direction: column-reverse;
+    }
+
+    .workapp--item:last-child {
+        margin-bottom: 0;
+    }
+
+    .workapp__img {
+        width: 100%;
+    }
+
+    .workapp__txt {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .workapp__txt h3 {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+
+    .workapp__txt h2 {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    .workapp__txt p {
+        font-size: 1.25rem;
+        line-height: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .btn {
+        display: block;
+        width: 290px;
+        margin: 30px auto;
+    }
+
+    .footer__wrap {
+        padding: 30px 0;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer img {
+        margin-bottom: 30px;
+    }
+
+    .menu {
+        justify-content: center;
+    }
+
+    .menu li {
+        margin: 10px 15px;
+    }
+}
